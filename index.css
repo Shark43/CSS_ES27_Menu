@@ -1,0 +1,60 @@
+/*Togliere i valori di defoult*/
+/*asterico applica a tutti tag della pagina selettore universale*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+ul li{
+    /*
+    width= 140+10+10+1+5+2+2 = 170
+    height=  25+10+10+1+1+2+2=51
+    */
+    width: 160px;
+    height: 45px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #AAAAAA;
+    border-left-width: 5px;
+    font-size: 12pt;
+    margin: 2px 2px;
+    /*padding: 10px 10px;*/
+    background-color: #CCCCCC;
+    font-weight: bold;
+}
+ul{
+    list-style: none; /*toglie i puntini*/
+    border: 1px solid black;
+    margin: 25px auto;
+    padding: 10px 10px;
+}
+ul.verticale{
+    width: 170px;
+}
+ul.orrizontale{
+    width: 680px;
+    /*float:left;*/
+    overflow: auto;
+}
+ul.orrizontale li{
+    /*
+    portare elementi in orizzontale
+    float
+    */
+    float: left;
+}
+ul li a:hover{
+    background-color: #888888;
+    color: #BBBBBB;
+    border-color: #222222;
+    text-decoration: underline;
+}
+ul li a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+}
